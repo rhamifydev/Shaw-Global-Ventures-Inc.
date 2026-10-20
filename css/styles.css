@@ -1100,6 +1100,17 @@ html {
   hyphens: auto;
 }
 
+.value-card.value-card-featured {
+  grid-column: 1 / -1;
+  background: rgba(185, 138, 62, 0.08);
+  border-color: rgba(185, 138, 62, 0.35);
+}
+
+.value-card.value-card-featured:hover {
+  background: rgba(185, 138, 62, 0.14);
+  border-color: var(--color-brass);
+}
+
 /* ==========================================================================
    FEDERAL PROCUREMENT & SPECIFICATIONS MATRIX
    ========================================================================== */
@@ -1176,6 +1187,15 @@ html {
   background-color: rgba(185, 138, 62, 0.05);
 }
 
+.review-note-box {
+  background: var(--color-field-ivory);
+  border-left: 3px solid var(--color-teal);
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
 .teaming-box {
   background: var(--color-midnight);
   color: var(--color-white);
@@ -1245,15 +1265,16 @@ html {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .teaming-points li {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.88rem;
-  color: var(--text-light-muted);
+  font-size: 0.92rem;
+  color: var(--text-light);
+  line-height: 1.45;
 }
 
 .teaming-bullet {
@@ -1267,6 +1288,51 @@ html {
   justify-content: center;
   color: var(--color-brass);
   flex-shrink: 0;
+}
+
+/* Government Contracting Callout & Disclaimer */
+.gov-inquiry-callout {
+  background: rgba(185, 138, 62, 0.12);
+  border: 1px solid var(--color-brass);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.gov-inquiry-title {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  color: var(--color-white);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.gov-inquiry-text {
+  font-size: 0.92rem;
+  color: var(--color-parchment);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.gov-disclaimer-banner {
+  background: var(--color-white);
+  border: 1px solid var(--color-parchment-border);
+  border-left: 4px solid var(--color-brass);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  margin-top: 36px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  box-shadow: var(--shadow-sm);
+}
+
+.gov-disclaimer-banner strong {
+  color: var(--color-midnight);
 }
 
 /* ==========================================================================
@@ -3079,6 +3145,498 @@ html {
   }
   .about-card-profile {
     padding: 22px 16px;
+  }
+}
+
+/* ==========================================================================
+   SERVICES DETAIL PAGE STYLING (services.html)
+   ========================================================================== */
+
+/* Quick Jump Navigation Pill Bar */
+.services-jump-bar {
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-parchment-border);
+  padding: 16px 0;
+  position: sticky;
+  top: var(--header-actual-height, var(--header-height));
+  z-index: 90;
+  box-shadow: 0 4px 14px rgba(15, 30, 51, 0.04);
+}
+
+.services-jump-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-jump-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: var(--color-field-ivory);
+  border: 1px solid var(--color-parchment-border);
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.services-jump-link:hover {
+  background: var(--color-midnight);
+  color: var(--color-white);
+  border-color: var(--color-midnight);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.services-jump-link .jump-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-brass);
+  font-weight: 700;
+}
+
+/* Service Detail Block Section */
+.service-detail-section {
+  padding: 96px 0;
+  position: relative;
+  border-bottom: 1px solid var(--color-parchment-border);
+}
+
+.service-detail-section.alt-bg {
+  background: #fbf9f4;
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.service-detail-grid.reverse {
+  grid-template-columns: 0.85fr 1.15fr;
+}
+
+.service-detail-grid.reverse .service-content-col {
+  order: 2;
+}
+
+.service-detail-grid.reverse .service-media-col {
+  order: 1;
+}
+
+/* Service Pillar Header */
+.service-pillar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-teal);
+  background: rgba(30, 107, 102, 0.1);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(30, 107, 102, 0.25);
+  margin-bottom: 14px;
+}
+
+.service-pillar-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.4vw, 2.45rem);
+  font-weight: 600;
+  color: var(--color-midnight);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+/* Service Lead Quote / Intro */
+.service-lead-intro {
+  background: var(--color-white);
+  border-left: 4px solid var(--color-brass);
+  border-top: 1px solid var(--color-parchment-border);
+  border-right: 1px solid var(--color-parchment-border);
+  border-bottom: 1px solid var(--color-parchment-border);
+  padding: 20px 24px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 26px;
+  box-shadow: 0 2px 8px rgba(15, 30, 51, 0.04);
+}
+
+.service-lead-intro p {
+  font-size: 1.12rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-midnight);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Service Capabilities Checklist Grid */
+.service-checklist-title {
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-brass-dark);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.service-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 18px;
+  margin-bottom: 28px;
+  list-style: none;
+  padding: 0;
+}
+
+.service-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--color-white);
+  border: 1px solid var(--color-parchment-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 0.92rem;
+  color: #243548;
+  font-weight: 500;
+  line-height: 1.45;
+  transition: all var(--transition-fast);
+}
+
+.service-check-item:hover {
+  border-color: var(--color-teal);
+  transform: translateX(3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-check-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-teal);
+}
+
+/* Service Outro Callout Box */
+.service-outro-box {
+  background: rgba(185, 138, 62, 0.08);
+  border: 1px solid rgba(185, 138, 62, 0.28);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  font-size: 0.92rem;
+  color: #314256;
+  line-height: 1.55;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.service-outro-box svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-brass-dark);
+}
+
+/* Service Action Row */
+.service-action-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Service Media Column Card */
+.service-media-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-parchment-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.service-media-box {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+}
+
+.service-media-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-media-card:hover .service-media-box img {
+  transform: scale(1.03);
+}
+
+.service-media-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 30, 51, 0.88);
+  backdrop-filter: blur(8px);
+  color: var(--color-parchment);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(185, 138, 62, 0.4);
+}
+
+/* Service Metadata Details Card */
+.service-specs-card {
+  padding: 24px;
+  background: var(--color-white);
+}
+
+.service-spec-heading {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-brass-dark);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.service-spec-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--color-field-ivory);
+  border: 1px solid var(--color-parchment-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+}
+
+.service-spec-label {
+  font-weight: 600;
+  color: var(--color-midnight);
+}
+
+.service-spec-val {
+  font-family: var(--font-mono);
+  color: var(--color-teal);
+  font-weight: 600;
+}
+
+/* Responsive Media Queries for Services Page */
+@media (max-width: 960px) {
+  .service-detail-grid,
+  .service-detail-grid.reverse {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .service-detail-grid.reverse .service-content-col {
+    order: 1;
+  }
+  .service-detail-grid.reverse .service-media-col {
+    order: 2;
+  }
+  .service-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-jump-bar {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .service-detail-section {
+    padding: 60px 0;
+  }
+  .service-pillar-title {
+    font-size: 1.85rem;
+  }
+  .service-lead-intro p {
+    font-size: 1.02rem;
+  }
+}
+
+/* ==========================================================================
+   PARTNER WITH US: INQUIRY CHECKLIST CARD
+   ========================================================================== */
+.cta-checklist-card {
+  background: rgba(15, 30, 51, 0.75);
+  border: 1px solid rgba(185, 138, 62, 0.4);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin: 22px 0 24px;
+}
+
+.cta-checklist-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--color-brass);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cta-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cta-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--color-parchment);
+  line-height: 1.45;
+}
+
+.cta-checklist li::before {
+  content: "•";
+  color: var(--color-brass);
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.cta-tagline-footer {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cta-tagline-company {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 4px;
+}
+
+.cta-tagline-motto {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--color-brass);
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   EXPERIENCE AND CAPABILITIES (ABOUT US PAGE)
+   ========================================================================== */
+.experience-section {
+  padding: 96px 0;
+  background-color: var(--color-field-ivory);
+  border-bottom: 1px solid var(--color-parchment-border);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.exp-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-parchment-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-brass);
+  box-shadow: var(--shadow-md);
+}
+
+.exp-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: rgba(30, 107, 102, 0.1);
+  border: 1px solid rgba(30, 107, 102, 0.25);
+  color: var(--color-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.exp-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--color-brass-dark);
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.exp-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-midnight);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.exp-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  flex-grow: 1;
+}
+
+.exp-disclosure-box {
+  background: var(--color-white);
+  border: 1px solid var(--color-parchment-border);
+  border-left: 4px solid var(--color-teal);
+  border-radius: var(--radius-md);
+  padding: 22px 26px;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 

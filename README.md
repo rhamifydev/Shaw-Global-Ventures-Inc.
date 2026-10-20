@@ -161,6 +161,7 @@ SHAW_GLOBAL_VENTURES_INC/
 ├── .gitignore                    # Version Control Ignores
 ├── about.html                    # "About Us", Mission, & Values Page
 ├── index.html                    # Root Homepage & Executive Procurement Landing
+├── services.html                 # Dedicated Services & Core Capabilities Page
 └── README.md                     # Enterprise Documentation
 ```
 

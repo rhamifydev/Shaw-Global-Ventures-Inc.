@@ -16,7 +16,9 @@
       
       const homeActive = active === 'home' ? 'active' : '';
       const aboutActive = (active === 'about' || active === 'about-us') ? 'active' : '';
+      const servicesActive = (active === 'services' || active === 'service') ? 'active' : '';
       const aboutCurrent = aboutActive ? 'aria-current="page"' : '';
+      const servicesCurrent = servicesActive ? 'aria-current="page"' : '';
 
       this.innerHTML = `
         <div class="header-master-wrapper" id="master-header">
@@ -65,7 +67,7 @@
                 <ul class="nav-menu">
                   <li><a href="index.html" class="nav-link ${homeActive}">Home</a></li>
                   <li><a href="about.html" class="nav-link ${aboutActive}" ${aboutCurrent}>About Us</a></li>
-                  <li><a href="index.html#services" class="nav-link">Core Capabilities</a></li>
+                  <li><a href="services.html" class="nav-link ${servicesActive}" ${servicesCurrent}>Services</a></li>
                   <li><a href="index.html#procurement-specs" class="nav-link">Contractor Data</a></li>
                   <li><a href="index.html#partner-contact" class="nav-link">Partner With SGV</a></li>
                 </ul>
@@ -111,6 +113,7 @@
       
       const homeActive = active === 'home' ? 'active' : '';
       const aboutActive = (active === 'about' || active === 'about-us') ? 'active' : '';
+      const servicesActive = (active === 'services' || active === 'service') ? 'active' : '';
 
       this.innerHTML = `
         <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
@@ -140,8 +143,8 @@
                 </a>
               </li>
               <li>
-                <a href="index.html#services" class="drawer-link">
-                  <span>Core Service Areas</span>
+                <a href="services.html" class="drawer-link ${servicesActive}">
+                  <span>Services &amp; Capabilities</span>
                   <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </a>
               </li>
@@ -233,9 +236,9 @@
               <div class="cap-sheet-header">
                 <div>
                   <h2 class="cap-sheet-title" id="modal-cap-title">SHAW GLOBAL VENTURES INC.</h2>
-                  <div class="cap-sheet-subtitle">DBA: GES SOCIAL MEDIA MANAGEMENT • VETERAN-LED SMALL BUSINESS</div>
-                  <div style="font-size: 0.88rem; color: #536479; margin-top: 4px;">
-                    Government Contracting | Digital Outreach | Supply Solutions
+                  <div class="cap-sheet-subtitle">DBA: GES SOCIAL MEDIA MANAGEMENT • VETERAN-LED CORPORATION</div>
+                  <div style="font-size: 0.9rem; color: #374151; margin-top: 6px; line-height: 1.5; max-width: 620px;">
+                    Shaw Global Ventures Inc. (SGV), DBA GES Social Media Management, provides social media management, digital outreach, marketing support, and supply solutions for government and commercial clients.
                   </div>
                 </div>
                 <div style="text-align: right;">
@@ -243,87 +246,103 @@
                     “True north for public service.”
                   </div>
                   <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-teal); margin-top: 4px;">
-                    SAM.GOV ACTIVE
+                    VETERAN-LED ENTERPRISE
                   </div>
                 </div>
               </div>
 
+              <!-- Company Information Section -->
               <div class="cap-sheet-section">
-                <div class="cap-section-heading">Corporate Identifiers &amp; Federal Codes</div>
-                <div class="cap-meta-grid">
+                <div class="cap-section-heading">Company Information</div>
+                <div class="cap-meta-grid" style="grid-template-columns: repeat(3, 1fr);">
                   <div>
                     <strong>Legal Business Name:</strong><br>
                     Shaw Global Ventures Inc.
                   </div>
                   <div>
-                    <strong>Unique Entity ID (UEI):</strong><br>
-                    <span style="font-family: var(--font-mono); font-weight: 600;">[YOUR UEI]</span>
-                  </div>
-                  <div>
-                    <strong>CAGE Code:</strong><br>
-                    <span style="font-family: var(--font-mono); font-weight: 600;">[YOUR CAGE]</span>
-                  </div>
-                  <div>
-                    <strong>Operating DBA:</strong><br>
+                    <strong>Doing Business As (DBA):</strong><br>
                     GES Social Media Management
                   </div>
                   <div>
-                    <strong>Socio-Economic Status:</strong><br>
-                    Veteran-Led Small Business
+                    <strong>Business Type:</strong><br>
+                    For-profit corporation
                   </div>
                   <div>
-                    <strong>Contract Role:</strong><br>
-                    Prime &amp; Subcontractor
+                    <strong>Leadership:</strong><br>
+                    Veteran-led
+                  </div>
+                  <div>
+                    <strong>Unique Entity ID (UEI):</strong><br>
+                    <span style="font-family: var(--font-mono); font-weight: 600;">[Insert once confirmed]</span>
+                  </div>
+                  <div>
+                    <strong>CAGE Code:</strong><br>
+                    <span style="font-family: var(--font-mono); font-weight: 600;">[Insert once assigned]</span>
+                  </div>
+                  <div>
+                    <strong>Business Address:</strong><br>
+                    [Insert verified business address]
+                  </div>
+                  <div>
+                    <strong>Website:</strong><br>
+                    [Insert website URL]
+                  </div>
+                  <div>
+                    <strong>Email:</strong><br>
+                    [Insert confirmed business email]
+                  </div>
+                  <div>
+                    <strong>Phone:</strong><br>
+                    [Insert business phone number]
                   </div>
                 </div>
               </div>
 
+              <!-- Core Competencies Section -->
               <div class="cap-sheet-section">
-                <div class="cap-section-heading">Core Competencies &amp; Service Pillars</div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 0.88rem;">
-                  <div>
-                    <strong style="color: var(--color-midnight);">Pillar 1: Social Media Management &amp; Digital Outreach</strong>
-                    <p style="color: #4b5563; margin-top: 4px;">Constituent engagement, public transparency, crisis communication protocol, Section 508 accessibility compliance.</p>
-                  </div>
-                  <div>
-                    <strong style="color: var(--color-midnight);">Pillar 2: Marketing, Advertising &amp; PR Support</strong>
-                    <p style="color: #4b5563; margin-top: 4px;">Multi-channel civic awareness campaigns, recruitment initiatives, press releases, and stakeholder communications.</p>
-                  </div>
-                  <div>
-                    <strong style="color: var(--color-midnight);">Pillar 3: Medical and PPE Supplies</strong>
-                    <p style="color: #4b5563; margin-top: 4px;">Medical grade examination gloves, N95/surgical masks, face shields, isolation gowns, and rapid distribution contracts.</p>
-                  </div>
-                  <div>
-                    <strong style="color: var(--color-midnight);">Pillar 4: Janitorial &amp; Facility Supplies</strong>
-                    <p style="color: #4b5563; margin-top: 4px;">Commercial disinfectants, institutional paper goods, floor care machinery, custodial tools, Green Seal solutions.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cap-sheet-section">
-                <div class="cap-section-heading">North American Industry Classification System (NAICS)</div>
-                <div class="cap-naics-list">
-                  <div class="cap-naics-item"><strong>541820</strong> (Primary) - Public Relations Agencies</div>
-                  <div class="cap-naics-item"><strong>541810</strong> - Advertising Agencies</div>
-                  <div class="cap-naics-item"><strong>541830</strong> - Media Buying Agencies</div>
-                  <div class="cap-naics-item"><strong>423450</strong> - Medical, Dental &amp; Hospital Equipment Wholesalers</div>
-                  <div class="cap-naics-item"><strong>423850</strong> - Service Establishment Equipment &amp; Supplies</div>
-                  <div class="cap-naics-item"><strong>561720</strong> - Janitorial Services Support</div>
-                </div>
-              </div>
-
-              <div class="cap-sheet-section">
-                <div class="cap-section-heading">Differentiators &amp; Value Proposition</div>
-                <ul style="padding-left: 18px; font-size: 0.88rem; color: #374151; line-height: 1.6;">
-                  <li><strong>Veteran-Led Discipline:</strong> Strict adherence to operational schedules, transparent deliverables, and contract specification precision.</li>
-                  <li><strong>Dual-Vector Service Capability:</strong> Unified contracting vehicle capable of delivering sophisticated digital public relations alongside critical physical supplies.</li>
-                  <li><strong>Responsiveness &amp; Agility:</strong> Dedicated single-point-of-contact contracting officer liaison ensuring zero bureaucratic lag.</li>
+                <div class="cap-section-heading">Core Competencies</div>
+                <ul style="padding-left: 20px; font-size: 0.88rem; color: #374151; line-height: 1.65; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                  <li>Social media management and digital content</li>
+                  <li>Public awareness and outreach campaigns</li>
+                  <li>Marketing, advertising, and public relations support</li>
+                  <li>Medical supplies and personal protective equipment</li>
+                  <li>Janitorial and facility consumables</li>
                 </ul>
               </div>
 
-              <div style="border-top: 1px solid #ded4bf; padding-top: 16px; font-size: 0.82rem; color: #536479; display: flex; justify-content: space-between;">
-                <div><strong>Inquiries:</strong> contracts@shawglobalventures.com</div>
-                <div><strong>Website:</strong> www.shawglobalventures.com</div>
+              <!-- Differentiators Section -->
+              <div class="cap-sheet-section">
+                <div class="cap-section-heading">Differentiators</div>
+                <ul style="padding-left: 20px; font-size: 0.88rem; color: #374151; line-height: 1.65; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                  <li>Veteran-led business</li>
+                  <li>Flexible digital services and supply capabilities</li>
+                  <li>Responsive communication and client coordination</li>
+                  <li>Experience relevant to community outreach and digital marketing</li>
+                </ul>
+              </div>
+
+              <!-- Potential NAICS Codes Section -->
+              <div class="cap-sheet-section">
+                <div class="cap-section-heading">Potential NAICS Codes — To Be Confirmed</div>
+                <div class="cap-naics-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                  <div class="cap-naics-item"><strong>541613</strong> — Marketing Consulting Services</div>
+                  <div class="cap-naics-item"><strong>541810</strong> — Advertising Agencies</div>
+                  <div class="cap-naics-item"><strong>541820</strong> — Public Relations Agencies</div>
+                  <div class="cap-naics-item"><strong>541430</strong> — Graphic Design Services</div>
+                  <div class="cap-naics-item"><strong>423450</strong> — Medical, Dental &amp; Hospital Equipment Wholesalers</div>
+                  <div class="cap-naics-item"><strong>424130</strong> — Industrial &amp; Personal Service Paper Wholesalers</div>
+                  <div class="cap-naics-item"><strong>423850</strong> — Service Establishment Equipment &amp; Supplies Wholesalers</div>
+                  <div class="cap-naics-item"><strong>424690</strong> — Other Chemical &amp; Allied Products Wholesalers</div>
+                </div>
+                <p style="font-size: 0.8rem; color: #6b7280; margin-top: 10px; font-style: italic; line-height: 1.5;">
+                  Final NAICS selections should reflect SGV’s actual business activities and the products it intends to sell. Additional codes may be appropriate depending on the specific products and services offered.
+                </p>
+              </div>
+
+              <div style="border-top: 1px solid #ded4bf; padding-top: 16px; font-size: 0.82rem; color: #536479; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                <div><strong>Inquiries:</strong> [Confirmed business email]</div>
+                <div><strong>Phone:</strong> [Business phone number]</div>
+                <div><strong>Website:</strong> [Website URL]</div>
               </div>
             </div>
           </div>
@@ -358,7 +377,7 @@
                 <ul class="footer-links">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
-                  <li><a href="index.html#services">Core Capabilities</a></li>
+                  <li><a href="services.html">Services</a></li>
                   <li><a href="index.html#procurement-specs">Federal Contractor Data</a></li>
                   <li><a href="index.html#partner-contact">Partner With SGV</a></li>
                 </ul>
@@ -367,7 +386,7 @@
               <div>
                 <h4 class="footer-col-title">Contractor Data</h4>
                 <ul class="footer-links">
-                  <li><a href="index.html#procurement-specs">Designated NAICS Codes</a></li>
+                  <li><a href="index.html#procurement-specs">Potential NAICS Codes</a></li>
                   <li><a href="index.html#procurement-specs">Federal CAGE &amp; UEI</a></li>
                   <li><a href="index.html#procurement-specs">Teaming Opportunities</a></li>
                   <li><a href="#hero" data-open-modal="capability">Capability Statement</a></li>
