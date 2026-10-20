@@ -15,35 +15,48 @@ document.addEventListener('DOMContentLoaded', () => {
  * Navbar elevation on scroll and accessible mobile drawer
  */
 function initNavbar() {
-  const masterHeader = document.getElementById('master-header') || document.querySelector('.site-header');
-  const toggleBtn = document.getElementById('mobile-nav-toggle');
-  const drawer = document.getElementById('mobile-drawer');
-  const backdrop = document.getElementById('mobile-drawer-backdrop');
-  const closeBtn = document.getElementById('drawer-close-btn');
-  const drawerLinks = document.querySelectorAll('.drawer-link, .drawer-cta-btn, .drawer-modal-btn');
+  function getElements() {
+    return {
+      masterHeader: document.getElementById('master-header') || document.querySelector('.site-header'),
+      toggleBtn: document.getElementById('mobile-nav-toggle'),
+      drawer: document.getElementById('mobile-drawer'),
+      backdrop: document.getElementById('mobile-drawer-backdrop'),
+      closeBtn: document.getElementById('drawer-close-btn')
+    };
+  }
 
   // Dynamically compute exact header height for flawless body offset
   function syncHeaderHeight() {
+    const { masterHeader } = getElements();
     if (masterHeader) {
       const height = masterHeader.offsetHeight;
-      document.documentElement.style.setProperty('--header-actual-height', `${height}px`);
+      if (height > 0) {
+        document.documentElement.style.setProperty('--header-actual-height', `${height}px`);
+      }
     }
   }
 
+  // Sync initially and on resize / orientation change
   syncHeaderHeight();
+  setTimeout(syncHeaderHeight, 50);
+  setTimeout(syncHeaderHeight, 300);
   window.addEventListener('resize', syncHeaderHeight);
   window.addEventListener('orientationchange', () => setTimeout(syncHeaderHeight, 150));
 
   // Master header shadow and compacting on scroll
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 25) {
-      masterHeader?.classList.add('scrolled');
-    } else {
-      masterHeader?.classList.remove('scrolled');
+    const { masterHeader } = getElements();
+    if (masterHeader) {
+      if (window.scrollY > 25) {
+        masterHeader.classList.add('scrolled');
+      } else {
+        masterHeader.classList.remove('scrolled');
+      }
     }
   });
 
   function openDrawer() {
+    const { drawer, backdrop, toggleBtn } = getElements();
     drawer?.classList.add('active');
     backdrop?.classList.add('active');
     drawer?.setAttribute('aria-hidden', 'false');
@@ -53,6 +66,7 @@ function initNavbar() {
   }
 
   function closeDrawer() {
+    const { drawer, backdrop, toggleBtn } = getElements();
     drawer?.classList.remove('active');
     backdrop?.classList.remove('active');
     drawer?.setAttribute('aria-hidden', 'true');
@@ -61,25 +75,34 @@ function initNavbar() {
     document.body.style.overflow = '';
   }
 
-  toggleBtn?.addEventListener('click', () => {
-    const isOpen = drawer?.classList.contains('active');
-    if (isOpen) {
+  // Global delegated click handler for drawer interactions
+  document.addEventListener('click', (e) => {
+    // Mobile toggle clicked
+    if (e.target.closest('#mobile-nav-toggle')) {
+      const { drawer } = getElements();
+      const isOpen = drawer?.classList.contains('active');
+      if (isOpen) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+      return;
+    }
+
+    // Close button or backdrop clicked
+    if (e.target.closest('#drawer-close-btn') || e.target.closest('#mobile-drawer-backdrop')) {
       closeDrawer();
-    } else {
-      openDrawer();
+      return;
+    }
+
+    // Drawer links clicked
+    if (e.target.closest('.drawer-link, .drawer-cta-btn, .drawer-modal-btn')) {
+      closeDrawer();
     }
   });
 
-  closeBtn?.addEventListener('click', closeDrawer);
-  backdrop?.addEventListener('click', closeDrawer);
-
-  drawerLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      closeDrawer();
-    });
-  });
-
   document.addEventListener('keydown', (e) => {
+    const { drawer } = getElements();
     if (e.key === 'Escape' && drawer?.classList.contains('active')) {
       closeDrawer();
     }
@@ -87,43 +110,42 @@ function initNavbar() {
 }
 
 /**
- * One-click copy for UEI, CAGE and NAICS codes (vital for contracting officers)
+ * One-click copy for UEI, CAGE and NAICS codes (delegated for custom element support)
  */
 function initCopyCodeButtons() {
-  const copyButtons = document.querySelectorAll('.copy-btn');
-  
-  copyButtons.forEach(btn => {
-    btn.addEventListener('click', async (e) => {
-      const textToCopy = btn.getAttribute('data-copy');
-      if (!textToCopy) return;
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.copy-btn');
+    if (!btn) return;
 
-      try {
-        await navigator.clipboard.writeText(textToCopy);
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '✓ Copied';
-        btn.style.color = '#79ded7';
-        
-        setTimeout(() => {
-          btn.innerHTML = originalText;
-          btn.style.color = '';
-        }, 2000);
-      } catch (err) {
-        console.warn('Clipboard write failed, using fallback', err);
-      }
-    });
+    const textToCopy = btn.getAttribute('data-copy');
+    if (!textToCopy) return;
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '✓ Copied';
+      btn.style.color = '#79ded7';
+      
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.color = '';
+      }, 2000);
+    } catch (err) {
+      console.warn('Clipboard write failed, using fallback', err);
+    }
   });
 }
 
 /**
- * Capability Statement Executive Modal
+ * Capability Statement Executive Modal (delegated for custom element support)
  */
 function initCapabilityModal() {
-  const openButtons = document.querySelectorAll('[data-open-modal="capability"]');
-  const modalOverlay = document.getElementById('capability-modal');
-  const closeButton = document.querySelector('.modal-close-btn');
-  const printButton = document.querySelector('.modal-print-btn');
+  function getModal() {
+    return document.getElementById('capability-modal');
+  }
 
   function openModal() {
+    const modalOverlay = getModal();
     if (modalOverlay) {
       modalOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -131,31 +153,46 @@ function initCapabilityModal() {
   }
 
   function closeModal() {
+    const modalOverlay = getModal();
     if (modalOverlay) {
       modalOverlay.classList.remove('active');
       document.body.style.overflow = '';
     }
   }
 
-  openButtons.forEach(btn => btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal();
-  }));
+  document.addEventListener('click', (e) => {
+    // Open trigger
+    const openBtn = e.target.closest('[data-open-modal="capability"]');
+    if (openBtn) {
+      e.preventDefault();
+      openModal();
+      return;
+    }
 
-  closeButton?.addEventListener('click', closeModal);
-
-  modalOverlay?.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) closeModal();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalOverlay?.classList.contains('active')) {
+    // Close trigger
+    if (e.target.closest('.modal-close-btn')) {
       closeModal();
+      return;
+    }
+
+    // Background overlay click
+    const modalOverlay = getModal();
+    if (modalOverlay && e.target === modalOverlay) {
+      closeModal();
+      return;
+    }
+
+    // Print button
+    if (e.target.closest('.modal-print-btn')) {
+      window.print();
     }
   });
 
-  printButton?.addEventListener('click', () => {
-    window.print();
+  document.addEventListener('keydown', (e) => {
+    const modalOverlay = getModal();
+    if (e.key === 'Escape' && modalOverlay?.classList.contains('active')) {
+      closeModal();
+    }
   });
 }
 
@@ -163,25 +200,23 @@ function initCapabilityModal() {
  * Connecting Service Area Cards to RFP Intake Form
  */
 function initServiceScopeLinks() {
-  const scopeLinks = document.querySelectorAll('[data-service-scope]');
-  const scopeSelect = document.getElementById('rfp-scope');
-  const ctaSection = document.getElementById('partner-contact');
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('[data-service-scope]');
+    if (!link) return;
 
-  scopeLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const scopeVal = link.getAttribute('data-service-scope');
-      
-      if (scopeSelect && scopeVal) {
-        scopeSelect.value = scopeVal;
-      }
+    const scopeVal = link.getAttribute('data-service-scope');
+    const scopeSelect = document.getElementById('rfp-scope');
+    const ctaSection = document.getElementById('partner-contact');
 
-      if (ctaSection) {
-        ctaSection.scrollIntoView({ behavior: 'smooth' });
-        const reqField = document.getElementById('rfp-requirements');
-        setTimeout(() => reqField?.focus(), 600);
-      }
-    });
+    if (scopeSelect && scopeVal) {
+      scopeSelect.value = scopeVal;
+    }
+
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+      const reqField = document.getElementById('rfp-requirements');
+      setTimeout(() => reqField?.focus(), 600);
+    }
   });
 }
 

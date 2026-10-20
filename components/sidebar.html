@@ -1,0 +1,92 @@
+<!-- MOBILE NAVIGATION DRAWER & SIDEBAR COMPONENT -->
+<div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+<aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+  <div class="drawer-header">
+    <img src="assets/logo.svg" alt="Shaw Global Ventures Logo" class="drawer-logo">
+    <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="drawer-nav" aria-label="Mobile Drawer Navigation">
+    <ul class="drawer-menu">
+      <li>
+        <a href="index.html" class="drawer-link">
+          <span>Home</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="drawer-link">
+          <span>About Us</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="index.html#services" class="drawer-link">
+          <span>Core Service Areas</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="index.html#procurement-specs" class="drawer-link">
+          <span>Federal Contractor Data</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+      <li>
+        <a href="index.html#partner-contact" class="drawer-link">
+          <span>Partner With SGV</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="drawer-actions">
+    <button type="button" class="btn btn-outline-midnight drawer-modal-btn" data-open-modal="capability">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+      </svg>
+      Capability Statement (PDF)
+    </button>
+
+    <a href="index.html#partner-contact" class="btn btn-brass drawer-cta-btn">
+      Discuss Procurement
+    </a>
+  </div>
+
+  <!-- Federal Credentials Card at Bottom of Sidebar -->
+  <div class="drawer-footer-credentials">
+    <div class="drawer-cred-badges">
+      <span class="gov-pill veteran-badge"><svg class="star-icon" width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Veteran-Led</span>
+      <span class="gov-pill">Active in SAM.gov</span>
+    </div>
+
+    <div class="drawer-cred-dba">
+      DBA: GES Social Media Management
+    </div>
+
+    <div class="drawer-cred-codes">
+      <div class="code-item">
+        <span class="code-label">UEI:</span>
+        <span class="code-val">[YOUR UEI]</span>
+        <button class="copy-btn" data-copy="[YOUR UEI]" title="Copy UEI" aria-label="Copy UEI">Copy</button>
+      </div>
+      <div class="code-item">
+        <span class="code-label">CAGE:</span>
+        <span class="code-val">[YOUR CAGE]</span>
+        <button class="copy-btn" data-copy="[YOUR CAGE]" title="Copy CAGE" aria-label="Copy CAGE">Copy</button>
+      </div>
+    </div>
+
+    <div class="drawer-cred-naics">
+      <span class="code-label">Primary NAICS:</span>
+      <span class="code-val">541820 • 541810 • 423450</span>
+    </div>
+  </div>
+</aside>

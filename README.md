@@ -141,20 +141,25 @@ SHAW_GLOBAL_VENTURES_INC/
 │   ├── logo.svg                  # Master Primary Northbound Logo
 │   └── logo-white.svg            # Contrast Inverted Logo for Dark Backdrops
 │
+├── components/                   # Reusable Partial Component Templates
+│   ├── capability-modal.html     # Federal Capability Statement Modal
+│   ├── footer.html               # 4-Column Enterprise Footer & DBA Ribbon
+│   ├── header.html               # Master Fixed Header & Federal Command Bar
+│   └── sidebar.html              # Mobile Navigation Drawer & Credentials Card
+│
 ├── css/                          # Design System & Responsive Stylesheets
 │   └── styles.css                # "Northbound" Direction 01 Theme & Tokens
-│
-├── html/                         # Multi-Page Sub-Pages
-│   └── about.html                # Detailed "About Us", Mission, & Values Page
 │
 ├── images/                       # Verified Commercial Product Photography
 │   ├── janitorial.jpg            # Industrial Custodial & Sanitation Inventory
 │   └── medical and ppe.webp      # 3M N95, Sterile Gowns, Gloves & PPE Equipment
 │
 ├── js/                           # Interactive UI Logic & State Engine
-│   └── app.js                    # Mobile Drawer, 1-Click Code Copy, & Modal Engine
+│   ├── app.js                    # Mobile Drawer, 1-Click Code Copy, & Modal Engine
+│   └── components.js             # Reusable Web Component Engine
 │
 ├── .gitignore                    # Version Control Ignores
+├── about.html                    # "About Us", Mission, & Values Page
 ├── index.html                    # Root Homepage & Executive Procurement Landing
 └── README.md                     # Enterprise Documentation
 ```
@@ -213,7 +218,7 @@ npx serve .
 
 Open your browser and navigate to:
 * **Home Page:** `http://localhost:3000/` or `http://localhost:3000/index.html`
-* **About Us Page:** `http://localhost:3000/html/about.html`
+* **About Us Page:** `http://localhost:3000/about.html`
 
 ---
 
