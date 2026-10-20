@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <!-- Outer Compass Ring -->
+  <circle cx="50" cy="50" r="44" stroke="#0F1E33" stroke-width="4.5" fill="none" />
+  <circle cx="50" cy="50" r="38" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 3" fill="none" />
+  
+  <!-- Compass Cardinal Tick Marks -->
+  <line x1="50" y1="6" x2="50" y2="13" stroke="#0F1E33" stroke-width="2.5" />
+  <line x1="50" y1="87" x2="50" y2="94" stroke="#0F1E33" stroke-width="2.5" />
+  <line x1="6" y1="50" x2="13" y2="50" stroke="#0F1E33" stroke-width="2.5" />
+  <line x1="87" y1="50" x2="94" y2="50" stroke="#0F1E33" stroke-width="2.5" />
+
+  <!-- Horizon Line -->
+  <line x1="16" y1="50" x2="84" y2="50" stroke="#0F1E33" stroke-width="2.2" opacity="0.8" />
+
+  <!-- Rising S Letterform -->
+  <path d="M62 31 C59 23 41 22 39 31 C37 40 63 41 61 58 C59 71 40 73 35 64" 
+        stroke="#0F1E33" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Brass Star at True North -->
+  <g transform="translate(50, 6)">
+    <polygon points="0,-8 2.5,-2.5 8,0 2.5,2.5 0,8 -2.5,2.5 -8,0 -2.5,-2.5" fill="#B98A3E" />
+    <circle cx="0" cy="0" r="1.2" fill="#0F1E33" />
+  </g>
+</svg>

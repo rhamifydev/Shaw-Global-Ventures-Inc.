@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaw Global Ventures Inc. | Government Contracting, Digital Outreach &amp; Supply Solutions</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Shaw Global Ventures Inc. (SGV), operating as GES Social Media Management, provides digital communications, social media management, public outreach, and supply solutions to government agencies, businesses, and institutional organizations. Veteran-led enterprise.">
+  <meta name="keywords" content="Shaw Global Ventures, GES Social Media Management, government contracting, federal procurement, digital outreach, social media management, medical supplies, PPE supplies, janitorial supplies, veteran-led small business">
+  <meta name="author" content="Shaw Global Ventures Inc.">
+  <meta name="theme-color" content="#0F1E33">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       MASTER FIXED HEADER (Command Bar + Navigation)
+       ======================================================================== -->
+  <div class="header-master-wrapper" id="master-header">
+    
+    <!-- Federal Command Ribbon -->
+    <aside class="gov-topbar" aria-label="Federal contractor data ribbon">
+      <div class="container gov-topbar-inner">
+        <div class="gov-badge-group">
+          <span class="gov-pill veteran-badge">
+            <svg class="star-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Veteran-Led Enterprise
+          </span>
+          <span class="gov-pill hide-on-mobile">
+            DBA: GES Social Media Management
+          </span>
+          <span class="gov-pill hide-on-mobile">
+            Status: Active in SAM.gov
+          </span>
+        </div>
+
+        <div class="gov-data-codes">
+          <div class="code-item">
+            <span class="code-label">UEI:</span>
+            <span class="code-val" id="top-uei">[YOUR UEI]</span>
+            <button class="copy-btn" data-copy="[YOUR UEI]" title="Copy UEI" aria-label="Copy UEI to clipboard">Copy</button>
+          </div>
+          <div class="code-item">
+            <span class="code-label">CAGE:</span>
+            <span class="code-val" id="top-cage">[YOUR CAGE]</span>
+            <button class="copy-btn" data-copy="[YOUR CAGE]" title="Copy CAGE" aria-label="Copy CAGE to clipboard">Copy</button>
+          </div>
+          <div class="code-item hide-on-mobile">
+            <span class="code-label">Primary NAICS:</span>
+            <span class="code-val">541820 • 541810 • 423450</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Navigation Bar -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-link" aria-label="Shaw Global Ventures Home">
+          <img src="assets/logo.svg" alt="Shaw Global Ventures Inc. - Northbound Compass Emblem" class="brand-logo-img">
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="html/about.html" class="nav-link">About Us</a></li>
+            <li><a href="#services" class="nav-link">Core Capabilities</a></li>
+            <li><a href="#procurement-specs" class="nav-link">Contractor Data</a></li>
+            <li><a href="#partner-contact" class="nav-link">Partner With SGV</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="btn btn-outline-midnight desktop-only-btn" data-open-modal="capability">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Capability Statement
+          </button>
+
+          <a href="#partner-contact" class="btn btn-brass nav-cta-btn">
+            Discuss Procurement
+          </a>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/logo.svg" alt="Shaw Global Ventures Logo" class="drawer-logo">
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-menu">
+        <li>
+          <a href="#hero" class="drawer-link active">
+            <span>Home</span>
+            <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </li>
+        <li>
+          <a href="html/about.html" class="drawer-link">
+            <span>About Us</span>
+            <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="drawer-link">
+            <span>Core Service Areas</span>
+            <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#procurement-specs" class="drawer-link">
+            <span>Federal Contractor Data</span>
+            <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#partner-contact" class="drawer-link">
+            <span>Partner With SGV</span>
+            <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="drawer-actions">
+      <button type="button" class="btn btn-outline-midnight drawer-modal-btn" data-open-modal="capability">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+        </svg>
+        Capability Statement (PDF)
+      </button>
+
+      <a href="#partner-contact" class="btn btn-brass drawer-cta-btn">
+        Discuss Procurement
+      </a>
+    </div>
+
+    <!-- Federal Credentials Card at Bottom of Sidebar -->
+    <div class="drawer-footer-credentials">
+      <div class="drawer-cred-badges">
+        <span class="gov-pill veteran-badge"><svg class="star-icon" width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Veteran-Led</span>
+        <span class="gov-pill">Active in SAM.gov</span>
+      </div>
+
+      <div class="drawer-cred-dba">
+        DBA: GES Social Media Management
+      </div>
+
+      <div class="drawer-cred-codes">
+        <div class="code-item">
+          <span class="code-label">UEI:</span>
+          <span class="code-val">[YOUR UEI]</span>
+          <button class="copy-btn" data-copy="[YOUR UEI]" title="Copy UEI" aria-label="Copy UEI">Copy</button>
+        </div>
+        <div class="code-item">
+          <span class="code-label">CAGE:</span>
+          <span class="code-val">[YOUR CAGE]</span>
+          <button class="copy-btn" data-copy="[YOUR CAGE]" title="Copy CAGE" aria-label="Copy CAGE">Copy</button>
+        </div>
+      </div>
+
+      <div class="drawer-cred-naics">
+        <span class="code-label">Primary NAICS:</span>
+        <span class="code-val">541820 • 541810 • 423450</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ========================================================================
+         HERO SECTION: "True North for Public Service"
+         ======================================================================== -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-copy">
+            <div class="hero-eyebrow">
+              <svg class="star-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Veteran-Led Government Services &amp; Supply Solutions
+            </div>
+
+            <h1 class="hero-title" id="hero-heading">
+              Your Reliable Partner for <span class="highlight-brass">Government Services</span> and Supply Solutions
+            </h1>
+
+            <p class="hero-lead">
+              Shaw Global Ventures Inc. (SGV), operating as GES Social Media Management, provides digital communications, social media management, public outreach, and supply solutions to government agencies, businesses, and institutional organizations.
+            </p>
+
+            <p class="hero-sublead">
+              We help organizations communicate effectively with their audiences, strengthen public engagement, and access essential products through responsive service, practical solutions, and a commitment to dependable delivery.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#partner-contact" class="btn btn-brass" style="font-size: 1.02rem; padding: 13px 26px;">
+                Partner With SGV
+              </a>
+              <button type="button" class="btn btn-outline-midnight" data-open-modal="capability" style="font-size: 1.02rem; padding: 13px 24px;">
+                Download Capability Statement
+              </button>
+            </div>
+
+            <div class="hero-trust-row">
+              <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.14)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Veteran-Led Accountability
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.14)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Contract Specification Precision
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.14)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Responsive Agency Support
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.14)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Dependable Delivery
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Contractor Dossier Card -->
+          <div class="hero-aside">
+            <div class="contractor-card">
+              <div class="card-header-dossier">
+                <div>
+                  <div class="dossier-title">Federal Contractor Overview</div>
+                  <div class="dossier-company">Shaw Global Ventures Inc.</div>
+                  <div class="dossier-dba">DBA: GES Social Media Management</div>
+                </div>
+                <div class="dossier-status-pill">
+                  ● SAM.gov Verified
+                </div>
+              </div>
+
+              <div class="dossier-hero-media">
+                <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=800&q=80" alt="Federal Contractor Operations and Institutional Facilities" width="800" height="110">
+                <div class="dossier-media-overlay">Government Facilities &amp; Operations</div>
+              </div>
+
+              <div class="dossier-grid">
+                <div class="dossier-stat">
+                  <div class="dossier-label">Contract Delivery</div>
+                  <div class="dossier-value">Prime &amp; Subcontractor</div>
+                </div>
+                <div class="dossier-stat">
+                  <div class="dossier-label">Leadership Model</div>
+                  <div class="dossier-value">Veteran-Led Business</div>
+                </div>
+                <div class="dossier-stat">
+                  <div class="dossier-label">Core Divisions</div>
+                  <div class="dossier-value">Digital &amp; Supply Solutions</div>
+                </div>
+                <div class="dossier-stat">
+                  <div class="dossier-label">Compliance Focus</div>
+                  <div class="dossier-value">FAR &amp; Section 508 Ready</div>
+                </div>
+              </div>
+
+              <div class="card-capabilities-list">
+                <div class="capabilities-list-title">Core Service Disciplines</div>
+                <div class="tag-cloud">
+                  <span class="tag-item">Government Social Media</span>
+                  <span class="tag-item">Public Outreach</span>
+                  <span class="tag-item">Strategic Marketing &amp; PR</span>
+                  <span class="tag-item">Medical &amp; PPE Supplies</span>
+                  <span class="tag-item">Janitorial &amp; Facility Goods</span>
+                </div>
+              </div>
+
+              <div class="card-footer-cta">
+                <span class="dossier-motto">“True north for public service.”</span>
+                <a href="#partner-contact" class="btn btn-outline-brass" style="padding: 7px 14px; font-size: 0.8rem;">
+                  Request Quote / RFP →
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CORE SERVICE AREAS SECTION (The 4 Pillars)
+         ======================================================================== -->
+    <section class="services-section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Enterprise Capabilities</span>
+          <h2 class="section-title" id="services-heading">Our Core Service Areas</h2>
+          <p class="section-subtitle">
+            Tailored solutions designed to help federal, state, municipal, and commercial clients meet mission-critical communication objectives and fulfill essential supply chain requirements.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Pillar 1: Government Social Media & Outreach -->
+          <article class="service-card">
+            <div class="service-media-frame">
+              <img class="service-media-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Digital Communications Management and Multi-Channel Analytics Dashboard" loading="lazy" width="800" height="160">
+              <span class="service-media-badge">Digital Outreach &amp; Analytics</span>
+            </div>
+
+            <div class="service-card-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <span class="service-code-tag">NAICS 541820 • DBA GES</span>
+            </div>
+
+            <h3 class="service-title">Government-Focused Social Media Management &amp; Digital Outreach</h3>
+            <p class="service-desc">
+              Comprehensive management of public-facing digital platforms. We craft strategic messaging, facilitate proactive constituent engagement, and ensure consistent, accessible communication compliant with public sector transparency guidelines.
+            </p>
+
+            <ul class="service-features-list">
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Agency-compliant multi-channel content scheduling &amp; publishing</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Public inquiries moderation &amp; crisis communications protocol</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Section 508 accessibility-compliant visual &amp; video assets</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Transparent analytics, sentiment tracking &amp; reporting</li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#partner-contact" class="service-link" data-service-scope="digital-outreach">
+                Request Service Scope <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-teal);">Mission Ready</span>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Marketing, Advertising & PR -->
+          <article class="service-card">
+            <div class="service-media-frame">
+              <img class="service-media-img" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="Strategic Communications and Public Relations Planning Team" loading="lazy" width="800" height="160">
+              <span class="service-media-badge">Strategic Civic Outreach</span>
+            </div>
+
+            <div class="service-card-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </div>
+              <span class="service-code-tag">NAICS 541810 • 541830</span>
+            </div>
+
+            <h3 class="service-title">Marketing, Advertising, and Public Relations Support</h3>
+            <p class="service-desc">
+              Full-spectrum communication campaigns designed to inform, educate, and mobilize community and stakeholder groups. From recruitment outreach to public awareness programs, we ensure your message reaches target demographics with clarity.
+            </p>
+
+            <ul class="service-features-list">
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Multi-platform digital advertising campaigns (Search, Social, Display)</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Public awareness &amp; civic educational initiative rollout</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Press release drafting, media placement &amp; stakeholder briefs</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Brand positioning for civic programs &amp; public safety campaigns</li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#partner-contact" class="service-link" data-service-scope="marketing-pr">
+                Request Service Scope <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-teal);">Campaign Agility</span>
+            </div>
+          </article>
+
+          <!-- Pillar 3: Medical and PPE Supplies -->
+          <article class="service-card">
+            <div class="service-media-frame">
+              <img class="service-media-img" src="images/medical%20and%20ppe.webp" alt="Medical Grade Supplies and Certified PPE Equipment" loading="lazy" width="800" height="160" style="object-position: center 60%;">
+              <span class="service-media-badge">Certified Medical &amp; PPE</span>
+            </div>
+
+            <div class="service-card-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <span class="service-code-tag">NAICS 423450 • PSC 6515</span>
+            </div>
+
+            <h3 class="service-title">Medical and Personal Protective Equipment (PPE) Supplies</h3>
+            <p class="service-desc">
+              Direct, vetted procurement and supply distribution of healthcare and protective equipment. We support healthcare facilities, correctional institutions, municipal departments, and emergency response teams with certified, high-grade supplies.
+            </p>
+
+            <ul class="service-features-list">
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Nitrile, latex, and vinyl examination gloves (medical grade)</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> N95, KN95, surgical masks &amp; protective face shields</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Isolation gowns, protective coveralls &amp; cleanroom apparel</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Rapid batch distribution &amp; scheduled replenishment contracts</li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#partner-contact" class="service-link" data-service-scope="medical-ppe">
+                Request Supply Catalog <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-brass-dark);">Vetted Supply Chain</span>
+            </div>
+          </article>
+
+          <!-- Pillar 4: Janitorial and Facility Supplies -->
+          <article class="service-card">
+            <div class="service-media-frame">
+              <img class="service-media-img" src="images/janitorial.jpg" alt="Commercial Janitorial and Institutional Facility Supplies Inventory" loading="lazy" width="800" height="160" style="object-position: center 40%;">
+              <span class="service-media-badge">Institutional Janitorial Goods</span>
+            </div>
+
+            <div class="service-card-top">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <span class="service-code-tag">NAICS 423850 • 561720</span>
+            </div>
+
+            <h3 class="service-title">Janitorial and Facility Supply Solutions</h3>
+            <p class="service-desc">
+              Reliable commercial-grade sanitation products and maintenance supplies to keep government buildings, schools, and institutional facilities hygienic, operational, and safe. High-volume fulfillment tailored to institutional procurement cycles.
+            </p>
+
+            <ul class="service-features-list">
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> EPA-registered commercial disinfectants &amp; sanitizing agents</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Institutional paper products, can liners &amp; soap dispensing systems</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Floor care machinery, custodial tools &amp; microfiber equipment</li>
+              <li><span class="feature-check" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(30, 107, 102, 0.12)" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.2L8.7 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Environmentally preferable (Green Seal compliant) cleaning solutions</li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#partner-contact" class="service-link" data-service-scope="janitorial-supplies">
+                Request Supply Catalog <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-brass-dark);">Institutional Grade</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         VETERAN-LED VALUES & MISSION COMMITMENT
+         ======================================================================== -->
+    <section class="veteran-section" id="veteran-heritage" aria-labelledby="veteran-heading">
+      <div class="container">
+        <div class="veteran-grid">
+          
+          <div>
+            <div class="veteran-badge-seal">
+              <svg class="star-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Direction 01: Northbound • Steady, Precise &amp; Veteran-Led
+            </div>
+
+            <h2 class="veteran-heading" id="veteran-heading">
+              Built to Read Well to a <span>Contracting Officer</span>.
+            </h2>
+
+            <p class="veteran-text">
+              As a veteran-led business, we value accountability, clear communication, and long-term working relationships. We aim to support government missions through adaptable services aligned with agency requirements and contract specifications.
+            </p>
+
+            <p class="veteran-subtext">
+              Our military roots instill an uncompromising standard of execution: deadlines are non-negotiable, scopes are followed with exactitude, and proactive liaison ensures no surprises. Whether delivering vital public health messaging or fulfilling emergency facility supplies, we operate with mission discipline.
+            </p>
+
+            <div class="veteran-image-feature">
+              <img class="veteran-feature-img" src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1000&q=80" alt="American Flag and Veteran Service Commitment" loading="lazy" width="1000" height="180">
+              <div class="veteran-image-caption">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Military Discipline • Mission Execution • Public Trust
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <a href="#partner-contact" class="btn btn-brass">
+                Discuss Teaming &amp; Contracting
+              </a>
+              <button type="button" class="btn btn-outline-brass" data-open-modal="capability">
+                Capability Statement (PDF)
+              </button>
+            </div>
+          </div>
+
+          <!-- 4 Core Operating Values -->
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="3" x2="12" y2="21"></line>
+                  <line x1="4" y1="7" x2="20" y2="7"></line>
+                  <path d="M4 7l3 7h-6l3-7z"></path>
+                  <path d="M20 7l3 7h-6l3-7z"></path>
+                  <line x1="9" y1="21" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="value-title">Accountability</h3>
+              <p class="value-desc">
+                We take total ownership of contract milestones, quality control metrics, and delivery timetables from kickoff through contract closeout.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  <line x1="8" y1="9" x2="16" y2="9"></line>
+                  <line x1="8" y1="13" x2="14" y2="13"></line>
+                </svg>
+              </div>
+              <h3 class="value-title">Clear Communication</h3>
+              <p class="value-desc">
+                Consistent updates, transparent chain-of-custody tracking, and responsive coordination with contracting officers (COs) and COTRs.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <h3 class="value-title">Specification Precision</h3>
+              <p class="value-desc">
+                Meticulous conformance to solicitation requirements, FAR clauses, ASTM/ANSI material ratings, and Section 508 web accessibility standards.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="value-title">Long-Term Partnerships</h3>
+              <p class="value-desc">
+                Fostering sustained reliability as a dependable prime or agile subcontractor for recurring federal, municipal, and institutional needs.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FEDERAL PROCUREMENT & SPECIFICATIONS MATRIX
+         ======================================================================== -->
+    <section class="procurement-section" id="procurement-specs" aria-labelledby="specs-heading">
+      <div class="container">
+        
+        <div class="section-head" style="margin-bottom: 40px;">
+          <span class="section-eyebrow">Procurement Reference Data</span>
+          <h2 class="section-title" id="specs-heading">Contract Identifiers &amp; Classifications</h2>
+          <p class="section-subtitle">
+            Essential reference data for federal Contracting Officers, Procurement Specialists, and Prime Contractor Teaming Coordinators.
+          </p>
+        </div>
+
+        <div class="specs-grid">
+          
+          <!-- NAICS Table Card -->
+          <div class="specs-card">
+            <div class="specs-header">
+              <h3 class="specs-title">Designated NAICS Codes</h3>
+            </div>
+
+            <div class="table-responsive">
+              <table class="naics-table" aria-label="North American Industry Classification System Codes">
+                <thead>
+                  <tr>
+                    <th scope="col">NAICS Code</th>
+                    <th scope="col">Classification Title</th>
+                    <th scope="col">Scope Focus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="naics-code">541820</td>
+                    <td><strong>Public Relations Agencies</strong></td>
+                    <td>Digital Outreach &amp; Strategic Comms</td>
+                  </tr>
+                  <tr>
+                    <td class="naics-code">541810</td>
+                    <td><strong>Advertising Agencies</strong></td>
+                    <td>Campaign Strategy &amp; Public Information</td>
+                  </tr>
+                  <tr>
+                    <td class="naics-code">541830</td>
+                    <td><strong>Media Buying Agencies</strong></td>
+                    <td>Civic &amp; Recruitment Media Placement</td>
+                  </tr>
+                  <tr>
+                    <td class="naics-code">423450</td>
+                    <td><strong>Medical &amp; Hospital Equipment Wholesalers</strong></td>
+                    <td>Personal Protective Equipment (PPE)</td>
+                  </tr>
+                  <tr>
+                    <td class="naics-code">423850</td>
+                    <td><strong>Service Establishment Equipment Supplies</strong></td>
+                    <td>Institutional Janitorial &amp; Sanitization</td>
+                  </tr>
+                  <tr>
+                    <td class="naics-code">561720</td>
+                    <td><strong>Janitorial Services</strong></td>
+                    <td>Facility Hygiene Support Solutions</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Teaming & Subcontracting Opportunity Box -->
+          <div class="teaming-box">
+            <div>
+              <span class="gov-pill veteran-badge" style="margin-bottom: 12px; display: inline-flex;">
+                Teaming Partner of Choice
+              </span>
+              <h3 class="teaming-title">Prime &amp; Subcontracting Partnerships</h3>
+              <p class="teaming-text">
+                Shaw Global Ventures Inc. actively collaborates with large prime defense, civilian, and commercial contractors seeking high-reliability veteran-led partners to meet statutory subcontracting goals and enhance proposal strength.
+              </p>
+
+              <div class="teaming-image-card">
+                <img class="teaming-img" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Supply Chain Logistics and Warehouse Distribution Fulfillment" loading="lazy" width="1000" height="130">
+                <div class="teaming-img-tag">Fulfillment &amp; Distribution Operations</div>
+              </div>
+
+              <ul class="teaming-points">
+                <li><span class="teaming-bullet" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> <strong>Agile Teaming:</strong> Rapid joint-venture and sub-tier agreement execution</li>
+                <li><span class="teaming-bullet" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> <strong>Compliance Rigor:</strong> Robust record-keeping and FAR flow-down compliance</li>
+                <li><span class="teaming-bullet" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> <strong>Dual-Pillar Strength:</strong> Capability across digital outreach and physical supplies</li>
+              </ul>
+            </div>
+
+            <div>
+              <a href="#partner-contact" class="btn btn-brass" style="width: 100%;">
+                Initiate Teaming Discussion
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CALL TO ACTION & INTERACTIVE RFP INTAKE ENGINE
+         ======================================================================== -->
+    <section class="cta-section" id="partner-contact" aria-labelledby="cta-heading">
+      <div class="container">
+        
+        <div class="cta-box-wrapper">
+          
+          <!-- Left Info Pane -->
+          <div class="cta-info-pane">
+            <div>
+              <span class="hero-eyebrow" style="background: rgba(185, 138, 62, 0.2); color: var(--color-parchment); border-left-color: var(--color-brass);">
+                Procurement Liaison
+              </span>
+
+              <h2 class="cta-info-title" id="cta-heading">
+                Partner with <span>SGV</span>.
+              </h2>
+
+              <p class="cta-info-lead">
+                Contact us to discuss your agency’s requirements, upcoming procurement opportunities, or subcontracting needs.
+              </p>
+
+              <div class="contact-direct-cards">
+                <div class="contact-card-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="contact-label">Procurement &amp; RFP Desk</div>
+                    <div class="contact-val">contracts@shawglobalventures.com</div>
+                  </div>
+                </div>
+
+                <div class="contact-card-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="contact-label">Corporate Headquarters</div>
+                    <div class="contact-val">Shaw Global Ventures Inc. • USA</div>
+                  </div>
+                </div>
+
+                <div class="contact-card-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="contact-label">Rapid Response SLA</div>
+                    <div class="contact-val">Official response within 1 business day</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button type="button" class="btn btn-outline-brass" data-open-modal="capability" style="width: 100%;">
+                Preview Full Capability Statement
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Form Pane -->
+          <div class="cta-form-pane">
+            <h3 class="form-title">Procurement &amp; Inquiry Intake</h3>
+            <p class="form-subtitle">
+              Submit your solicitation details, upcoming requirement, or supply requisition below.
+            </p>
+
+            <!-- Success State -->
+            <div class="form-success-banner" id="form-success-banner">
+              <div class="form-success-icon-wrap" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h4 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 8px;">
+                Requirement Received
+              </h4>
+              <p style="font-size: 0.95rem; margin-bottom: 16px;">
+                Thank you for reaching out to Shaw Global Ventures Inc. A dedicated contracting specialist has received your transmission and will review your specifications promptly.
+              </p>
+              <button type="button" class="btn btn-outline-midnight" id="form-reset-btn" style="font-size: 0.85rem;">
+                Submit Another Inquiry
+              </button>
+            </div>
+
+            <!-- Active Form -->
+            <form id="procurement-intake-form" novalidate>
+              <div class="form-grid">
+                
+                <div class="form-group">
+                  <label class="form-label" for="rfp-org">Agency / Organization *</label>
+                  <input type="text" id="rfp-org" class="form-input" placeholder="e.g., Dept of Veterans Affairs, Prime Inc." required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="rfp-type">Organization Type *</label>
+                  <select id="rfp-type" class="form-select" required>
+                    <option value="" disabled selected>Select Entity Type...</option>
+                    <option value="federal">Federal Government Agency</option>
+                    <option value="state-local">State / Municipal Government</option>
+                    <option value="prime">Prime Defense / Civilian Contractor</option>
+                    <option value="healthcare">Healthcare / Hospital Institution</option>
+                    <option value="commercial">Commercial / Institutional Business</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="rfp-name">Contact Person &amp; Title *</label>
+                  <input type="text" id="rfp-name" class="form-input" placeholder="e.g., John Miller, Contracting Officer" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="rfp-email">Official Email *</label>
+                  <input type="email" id="rfp-email" class="form-input" placeholder="name@agency.gov or corporate email" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="rfp-phone">Phone Number</label>
+                  <input type="tel" id="rfp-phone" class="form-input" placeholder="(555) 000-0000">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="rfp-scope">Scope of Interest *</label>
+                  <select id="rfp-scope" class="form-select" required>
+                    <option value="" disabled selected>Select Primary Scope...</option>
+                    <option value="digital-outreach">Government Social Media Management &amp; Digital Outreach</option>
+                    <option value="marketing-pr">Marketing, Advertising, and PR Support</option>
+                    <option value="medical-ppe">Medical and PPE Supplies</option>
+                    <option value="janitorial-supplies">Janitorial and Facility Supply Solutions</option>
+                    <option value="multi-teaming">Subcontracting / Multi-scope Teaming</option>
+                    <option value="other">Other / General Procurement Question</option>
+                  </select>
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label" for="rfp-solicitation">Solicitation / RFP Number (If applicable)</label>
+                  <input type="text" id="rfp-solicitation" class="form-input" placeholder="e.g., W911NF-26-R-0042 / SAM.gov notice ID">
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label" for="rfp-requirements">Requirement Description &amp; Scope *</label>
+                  <textarea id="rfp-requirements" class="form-textarea" placeholder="Please outline your agency's objectives, required quantity or schedule, delivery timeline, or subcontracting requirements..." required></textarea>
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn btn-brass" style="width: 100%; padding: 14px; font-size: 1rem;">
+                Transmit Requirement Details to SGV Desk <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+
+              <p class="form-privacy-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-teal); flex-shrink: 0;" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                All solicitations, specifications, and discussions are handled under strict confidentiality and operational security standards.
+              </p>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       EXECUTIVE CAPABILITY STATEMENT MODAL (Printable / Saveable)
+       ======================================================================== -->
+  <div class="modal-overlay" id="capability-modal" role="dialog" aria-modal="true" aria-labelledby="modal-cap-title">
+    <div class="modal-content">
+      <div class="modal-bar-actions">
+        <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px; display: inline-flex; align-items: center; gap: 8px;">
+          <svg class="star-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          OFFICIAL CAPABILITY STATEMENT • SHAW GLOBAL VENTURES INC.
+        </span>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <button type="button" class="btn btn-outline-brass modal-print-btn" style="padding: 5px 12px; font-size: 0.78rem;">
+            Print / Save PDF
+          </button>
+          <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+
+      <div class="capability-sheet">
+        <div class="cap-sheet-header">
+          <div>
+            <h2 class="cap-sheet-title" id="modal-cap-title">SHAW GLOBAL VENTURES INC.</h2>
+            <div class="cap-sheet-subtitle">DBA: GES SOCIAL MEDIA MANAGEMENT • VETERAN-LED SMALL BUSINESS</div>
+            <div style="font-size: 0.88rem; color: #536479; margin-top: 4px;">
+              Government Contracting | Digital Outreach | Supply Solutions
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--font-serif); font-style: italic; color: var(--color-brass-dark); font-size: 0.95rem;">
+              “True north for public service.”
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-teal); margin-top: 4px;">
+              SAM.GOV ACTIVE
+            </div>
+          </div>
+        </div>
+
+        <div class="cap-sheet-section">
+          <div class="cap-section-heading">Corporate Identifiers &amp; Federal Codes</div>
+          <div class="cap-meta-grid">
+            <div>
+              <strong>Legal Business Name:</strong><br>
+              Shaw Global Ventures Inc.
+            </div>
+            <div>
+              <strong>Unique Entity ID (UEI):</strong><br>
+              <span style="font-family: var(--font-mono); font-weight: 600;">[YOUR UEI]</span>
+            </div>
+            <div>
+              <strong>CAGE Code:</strong><br>
+              <span style="font-family: var(--font-mono); font-weight: 600;">[YOUR CAGE]</span>
+            </div>
+            <div>
+              <strong>Operating DBA:</strong><br>
+              GES Social Media Management
+            </div>
+            <div>
+              <strong>Socio-Economic Status:</strong><br>
+              Veteran-Led Small Business
+            </div>
+            <div>
+              <strong>Contract Capacity:</strong><br>
+              Prime &amp; Subcontractor
+            </div>
+          </div>
+        </div>
+
+        <div class="cap-sheet-section">
+          <div class="cap-section-heading">Core Competencies</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 0.9rem;">
+            <div>
+              <p style="font-weight: 600; color: var(--color-midnight); margin-bottom: 4px;">
+                1. Digital Outreach &amp; Social Media Management
+              </p>
+              <p style="color: #4a5568; line-height: 1.5;">
+                Agency-approved digital communications, strategic message formulation, crisis management, multi-platform publishing, and Section 508 accessible multimedia.
+              </p>
+            </div>
+            <div>
+              <p style="font-weight: 600; color: var(--color-midnight); margin-bottom: 4px;">
+                2. Marketing, Advertising &amp; PR
+              </p>
+              <p style="color: #4a5568; line-height: 1.5;">
+                Community outreach programs, targeted public service announcements, digital advertising campaigns, and civic recruitment initiatives.
+              </p>
+            </div>
+            <div>
+              <p style="font-weight: 600; color: var(--color-midnight); margin-bottom: 4px;">
+                3. Medical &amp; Personal Protective Supplies (PPE)
+              </p>
+              <p style="color: #4a5568; line-height: 1.5;">
+                Distribution of hospital-grade nitrile gloves, respiratory PPE (N95/KN95), isolation apparel, and rapid replenishment supply lines.
+              </p>
+            </div>
+            <div>
+              <p style="font-weight: 600; color: var(--color-midnight); margin-bottom: 4px;">
+                4. Janitorial &amp; Facility Supplies
+              </p>
+              <p style="color: #4a5568; line-height: 1.5;">
+                Commercial sanitation agents, EPA-registered disinfectants, institutional paper solutions, and custodial facility equipment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cap-sheet-section">
+          <div class="cap-section-heading">North American Industry Classification (NAICS)</div>
+          <div style="font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.7; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div><strong>541820</strong> - Public Relations Agencies (Primary)</div>
+            <div><strong>541810</strong> - Advertising Agencies</div>
+            <div><strong>541830</strong> - Media Buying Agencies</div>
+            <div><strong>423450</strong> - Medical, Dental &amp; Hospital Equipment Wholesalers</div>
+            <div><strong>423850</strong> - Service Establishment Equipment Supplies</div>
+            <div><strong>561720</strong> - Janitorial Services Support</div>
+          </div>
+        </div>
+
+        <div class="cap-sheet-section">
+          <div class="cap-section-heading">Key Differentiators</div>
+          <ul style="padding-left: 18px; font-size: 0.88rem; color: #374151; line-height: 1.6;">
+            <li><strong>Veteran-Led Discipline:</strong> Strict adherence to operational schedules, transparent deliverables, and contract specification precision.</li>
+            <li><strong>Dual-Vector Service Capability:</strong> Unified contracting vehicle capable of delivering sophisticated digital public relations alongside critical physical supplies.</li>
+            <li><strong>Responsiveness &amp; Agility:</strong> Dedicated single-point-of-contact contracting officer liaison ensuring zero bureaucratic lag.</li>
+          </ul>
+        </div>
+
+        <div style="border-top: 1px solid #ded4bf; padding-top: 16px; font-size: 0.82rem; color: #536479; display: flex; justify-content: space-between;">
+          <div><strong>Inquiries:</strong> contracts@shawglobalventures.com</div>
+          <div><strong>Website:</strong> www.shawglobalventures.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <div>
+          <div class="footer-logo-box">
+            <img src="assets/logo-white.svg" alt="Shaw Global Ventures White Emblem" style="height: 48px; width: auto;">
+          </div>
+          <p class="footer-mission">
+            Providing digital communications, public outreach, and essential supply solutions to government agencies and institutions with veteran-led precision and dependable delivery.
+          </p>
+          <div class="footer-motto-quote">
+            “True north for public service.”
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="html/about.html">About Us</a></li>
+            <li><a href="#services">Core Capabilities</a></li>
+            <li><a href="#procurement-specs">Federal Contractor Data</a></li>
+            <li><a href="#partner-contact">Partner With SGV</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contractor Data</h4>
+          <ul class="footer-links">
+            <li><a href="#procurement-specs">Designated NAICS Codes</a></li>
+            <li><a href="#procurement-specs">Federal CAGE &amp; UEI</a></li>
+            <li><a href="#procurement-specs">Teaming Opportunities</a></li>
+            <li><a href="#hero" data-open-modal="capability">Capability Statement</a></li>
+            <li><a href="#partner-contact">RFP / Tender Submission</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Procurement Contact</h4>
+          <ul class="footer-links" style="font-family: var(--font-mono); font-size: 0.82rem;">
+            <li style="color: var(--color-parchment);">Shaw Global Ventures Inc.</li>
+            <li>DBA: GES Social Media Management</li>
+            <li style="color: var(--color-brass);">contracts@shawglobalventures.com</li>
+            <li>Veteran-Led Small Business</li>
+            <li style="color: #79ded7;">Active in SAM.gov</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Shaw Global Ventures Inc. All rights reserved.
+        </div>
+        <div class="dba-legal-badge">
+          Doing Business As: GES Social Media Management
+        </div>
+        <div>
+          Built with precision • Brand Direction 01: Northbound
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
