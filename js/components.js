@@ -40,17 +40,13 @@
               <div class="gov-data-codes">
                 <div class="code-item">
                   <span class="code-label">UEI:</span>
-                  <span class="code-val" id="top-uei">[YOUR UEI]</span>
-                  <button class="copy-btn" data-copy="[YOUR UEI]" title="Copy UEI" aria-label="Copy UEI to clipboard">Copy</button>
+                  <span class="code-val" id="top-uei">KWFDUR2EE9E3</span>
+                  <button class="copy-btn" data-copy="KWFDUR2EE9E3" title="Copy UEI" aria-label="Copy UEI to clipboard">Copy</button>
                 </div>
                 <div class="code-item">
                   <span class="code-label">CAGE:</span>
-                  <span class="code-val" id="top-cage">[YOUR CAGE]</span>
-                  <button class="copy-btn" data-copy="[YOUR CAGE]" title="Copy CAGE" aria-label="Copy CAGE to clipboard">Copy</button>
-                </div>
-                <div class="code-item hide-on-mobile">
-                  <span class="code-label">Primary NAICS:</span>
-                  <span class="code-val">541820 • 541810 • 423450</span>
+                  <span class="code-val" id="top-cage">Pending</span>
+                  <button class="copy-btn" data-copy="Pending" title="Copy CAGE" aria-label="Copy CAGE to clipboard">Copy</button>
                 </div>
               </div>
             </div>
@@ -191,19 +187,14 @@
             <div class="drawer-cred-codes">
               <div class="code-item">
                 <span class="code-label">UEI:</span>
-                <span class="code-val">[YOUR UEI]</span>
-                <button class="copy-btn" data-copy="[YOUR UEI]" title="Copy UEI" aria-label="Copy UEI">Copy</button>
+                <span class="code-val">KWFDUR2EE9E3</span>
+                <button class="copy-btn" data-copy="KWFDUR2EE9E3" title="Copy UEI" aria-label="Copy UEI">Copy</button>
               </div>
               <div class="code-item">
                 <span class="code-label">CAGE:</span>
-                <span class="code-val">[YOUR CAGE]</span>
-                <button class="copy-btn" data-copy="[YOUR CAGE]" title="Copy CAGE" aria-label="Copy CAGE">Copy</button>
+                <span class="code-val">Pending</span>
+                <button class="copy-btn" data-copy="Pending" title="Copy CAGE" aria-label="Copy CAGE">Copy</button>
               </div>
-            </div>
-
-            <div class="drawer-cred-naics">
-              <span class="code-label">Primary NAICS:</span>
-              <span class="code-val">541820 • 541810 • 423450</span>
             </div>
           </div>
         </aside>
@@ -273,27 +264,27 @@
                   </div>
                   <div>
                     <strong>Unique Entity ID (UEI):</strong><br>
-                    <span style="font-family: var(--font-mono); font-weight: 600;">[Insert once confirmed]</span>
+                    <span style="font-family: var(--font-mono); font-weight: 600;">KWFDUR2EE9E3</span>
                   </div>
                   <div>
                     <strong>CAGE Code:</strong><br>
-                    <span style="font-family: var(--font-mono); font-weight: 600;">[Insert once assigned]</span>
+                    <span style="font-family: var(--font-mono); font-weight: 600;">Pending</span>
                   </div>
                   <div>
                     <strong>Business Address:</strong><br>
-                    [Insert verified business address]
+                    11057 South Fairfield Avenue<br>Chicago, IL 60655
                   </div>
                   <div>
                     <strong>Website:</strong><br>
-                    [Insert website URL]
+                    www.shawglobalventures.com
                   </div>
                   <div>
                     <strong>Email:</strong><br>
-                    [Insert confirmed business email]
+                    <a href="mailto:contracts@sgvince.com" style="color: inherit; text-decoration: underline;">contracts@sgvince.com</a>
                   </div>
                   <div>
                     <strong>Phone:</strong><br>
-                    [Insert business phone number]
+                    <a href="tel:+17736152780" style="color: inherit; text-decoration: underline;">+1 (773) 615-2780</a>
                   </div>
                 </div>
               </div>
@@ -340,9 +331,10 @@
               </div>
 
               <div style="border-top: 1px solid #ded4bf; padding-top: 16px; font-size: 0.82rem; color: #536479; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-                <div><strong>Inquiries:</strong> [Confirmed business email]</div>
-                <div><strong>Phone:</strong> [Business phone number]</div>
-                <div><strong>Website:</strong> [Website URL]</div>
+                <div><strong>Inquiries:</strong> <a href="mailto:contracts@sgvince.com" style="color: inherit;">contracts@sgvince.com</a></div>
+                <div><strong>Phone:</strong> <a href="tel:+17736152780" style="color: inherit;">+1 (773) 615-2780</a></div>
+                <div><strong>Address:</strong> 11057 S. Fairfield Ave, Chicago, IL 60655</div>
+                <div><strong>Website:</strong> www.shawglobalventures.com</div>
               </div>
             </div>
           </div>
@@ -399,8 +391,9 @@
                 <ul class="footer-links" style="font-family: var(--font-mono); font-size: 0.82rem;">
                   <li style="color: var(--color-parchment);">Shaw Global Ventures Inc.</li>
                   <li>DBA: GES Social Media Management</li>
-                  <li style="color: var(--color-brass);">contracts@shawglobalventures.com</li>
-                  <li>Veteran-Led Small Business</li>
+                  <li style="color: var(--color-brass);"><a href="mailto:contracts@sgvince.com" style="color: inherit; text-decoration: none;">contracts@sgvince.com</a></li>
+                  <li><a href="tel:+17736152780" style="color: inherit; text-decoration: none;">+1 (773) 615-2780</a></li>
+                  <li style="color: #94a3b8; font-size: 0.76rem; line-height: 1.4;">11057 S. Fairfield Ave, Chicago, IL 60655</li>
                   <li style="color: #79ded7;">Active in SAM.gov</li>
                 </ul>
               </div>

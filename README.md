@@ -13,7 +13,6 @@
   <p align="center">
     <a href="https://sam.gov"><img src="https://img.shields.io/badge/SAM.gov-Active%20Verified-0F1E33?style=for-the-badge&logo=shield" alt="SAM.gov Active"></a>
     <img src="https://img.shields.io/badge/Ownership-Veteran--Led%20Small%20Business-B98A3E?style=for-the-badge&logo=star" alt="Veteran-Led Business">
-    <img src="https://img.shields.io/badge/NAICS-541820%20%E2%80%A2%20541810%20%E2%80%A2%20423450-1E6B66?style=for-the-badge" alt="Primary NAICS">
     <img src="https://img.shields.io/badge/Compliance-FAR%20%26%20Section%20508%20Ready-192535?style=for-the-badge" alt="FAR and Section 508">
   </p>
 
@@ -46,8 +45,11 @@ As a veteran-led enterprise, SGV is anchored in **mission discipline**, **transp
 | :--- | :--- |
 | **Legal Business Name** | **Shaw Global Ventures Inc.** |
 | **Doing Business As (DBA)** | **GES Social Media Management** |
-| **Unique Entity ID (UEI)** | `[YOUR UEI]` |
-| **CAGE Code** | `[YOUR CAGE]` |
+| **Unique Entity ID (UEI)** | `KWFDUR2EE9E3` |
+| **CAGE Code** | Pending |
+| **Business Address** | 11057 South Fairfield Avenue, Chicago, IL 60655 |
+| **Phone Number** | +1 (773) 615-2780 |
+| **Business Email** | `contracts@sgvince.com` |
 | **SAM.gov Status** | Active • Verified Federal Vendor |
 | **Socio-Economic Status** | Veteran-Led Small Business Enterprise |
 | **Contract Roles** | Prime Contractor & Subcontracting / Teaming Partner |
@@ -227,7 +229,9 @@ Open your browser and navigate to:
 
 Shaw Global Ventures Inc. actively teams with large prime contractors seeking reliable, high-performing, veteran-led partners to meet statutory small business participation goals.
 
-* **Procurement Desk:** `contracts@shawglobalventures.com`
+* **Procurement Desk:** `contracts@sgvince.com`
+* **Phone:** `+1 (773) 615-2780`
+* **Address:** 11057 South Fairfield Avenue, Chicago, IL 60655
 * **Operating DBA:** GES Social Media Management
 * **Entity Registration:** Active on [SAM.gov](https://sam.gov)
 
